@@ -6,13 +6,23 @@ nothing here reveals it.
 
 ## Download
 
-Grab the newest APK from the releases page (newest build at the top):
+Newest build:
+
+https://github.com/thara-hangnung/agentRD-releases/releases/latest
+
+All builds:
 
 https://github.com/thara-hangnung/agentRD-releases/releases
 
-Current build: v1.0.0 — https://github.com/thara-hangnung/agentRD-releases/releases/tag/v1.0.0
-
 Each release names the version and what changed.
+
+## Which file to install
+
+- `rd-agent-<version>-release.apk` — release-signed. Use this one.
+- `rd-agent-<version>-debug.apk` — debug build, for testing only.
+
+The two variants are signed with different keys, so Android refuses to install
+one over the other. Uninstall the other variant first.
 
 ## Install
 
@@ -20,15 +30,16 @@ Each release names the version and what changed.
 2. When Android asks, allow installing from this source (Chrome / Files).
 3. Open the downloaded file and install.
 
-To update, install the newer APK over the installed app — the builds are signed
-with the same key, so your data is kept.
+Updating: install the newer APK of the same variant over the installed app —
+same signing key, so your data is kept. Switching between the release and debug
+variant needs an uninstall, which deletes the app's data (export a backup from
+Settings first).
 
 Requirements: Android 8.1 (API 26) or newer.
 
 ## Notes
 
-- Builds marked **pre-release** are debug-signed test builds. If the phone
-  already has a release-signed copy of `com.toia.rdagent`, uninstall it first —
-  Android refuses to install over a different signature.
 - Data stays on the device; RD Agent has no server of its own apart from the
   optional cloud backup the agent configures.
+- Pro features (LOT upload, LOT check, ASLAAS push, Passbook, FormFill) are
+  unlocked per DOP agent ID after signing in with Google in Settings.
