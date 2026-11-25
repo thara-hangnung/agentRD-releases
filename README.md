@@ -6,9 +6,11 @@ nothing here reveals it.
 
 ## Download
 
-Grab the newest APK from the releases page:
+Grab the newest APK from the releases page (newest build at the top):
 
-https://github.com/thara-hangnung/agentRD-releases/releases/latest
+https://github.com/thara-hangnung/agentRD-releases/releases
+
+Current build: v1.0.0 — https://github.com/thara-hangnung/agentRD-releases/releases/tag/v1.0.0
 
 Each release names the version and what changed.
 
